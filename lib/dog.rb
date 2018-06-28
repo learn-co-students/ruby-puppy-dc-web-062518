@@ -7,16 +7,15 @@ class Dog
     
     @name = name
     # binding.pry
-    @@all << name
+    @@all << self
   end
   def self.clear_all
     @@all.clear
    end
   
   def self.all
-    @@all
     @@all.each do |dog|
-      puts dog
+      puts dog.name
     end
   end
   
